@@ -1,0 +1,60 @@
+body{
+    background-color: lavender;
+}
+h1{
+    text-align: center;
+    text-decoration:underline navy;
+    color: navy;
+}
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc{
+    width:100%;
+    max-width: 500px;
+    background-color: lavender;
+    overflow: hidden;
+    box-shadow: 0px 2px 64px rgba(red, green, blue, alpha);
+}
+.display{
+    padding:20px;
+    text-align: right;
+    background-color: black;
+    color:white;
+    font-size: 18px;
+}
+.digits {
+    display: flex;
+    flex-wrap: wrap;
+  }
+button{
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding:16px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+button:hover{
+    opacity: 0.6;
+}
+  .digits button {
+    flex: 1 1 33.333%;
+    max-width: 33.333%;
+    background-color: black;
+    color:white;
+  }
+  .operators{
+    display: flex;
+  }
+  .operators button{
+    flex:1 1 0%;
+    background-color: tomato;
+  }
